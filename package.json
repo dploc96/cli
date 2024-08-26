@@ -1,0 +1,33 @@
+{
+  "name": "@locdp/cli",
+  "version": "0.0.0",
+  "description": "Command lines support fast gen changelog, commit, deploy.",
+  "license": "MIT",
+  "author": {
+    "name": "Loic Duong",
+    "email": "dploc96@gmail.com",
+    "url": "https://github.com/dploc96"
+  },
+  "bin": {
+    "ld": "dist/index.js"
+  },
+  "keywords": [
+    "cli",
+    "changelog",
+    "commit",
+    "deploy",
+    "node"
+  ],
+  "scripts": {
+    "build": "esbuild src/** --outdir=./dist --bundle --minify --platform=node --target=node10",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "18.19.25",
+    "esbuild": "0.20.2",
+    "typescript": "5.4.2"
+  },
+  "dependencies": {
+    "dayjs": "1.11.11"
+  }
+}
